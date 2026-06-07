@@ -1,14 +1,14 @@
 import React from "react";
-import ArticleList from "./ArticleList";
+import blogData from "../data/blog";
 
-function Article({title, date, preview}) {
+// date prop has a default value
+function Article({title, date="January 1, 1970", preview}) {
     return(
         <article>
             <h3>{title}</h3>
             <small>{date}</small>
             <p>{preview}</p>
-            <ArticleList />
         </article>
     );
 }
-export default Article;
+export default Article; 
